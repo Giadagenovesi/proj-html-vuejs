@@ -2,3 +2,14 @@
 @import "bootstrap/scss/bootstrap";
 //Fontawsome import
 @import"node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+// RESET
+a {
+    text-decoration: none;
+    color: inherit;
+}
+// LAYOUT
+.container {
+    // DEBUG
+    border: 1px solid red;
+}
