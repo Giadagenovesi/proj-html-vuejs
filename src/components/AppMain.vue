@@ -11,11 +11,14 @@ export default {
         <section class="about-us py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, ducimus! Cum et error iusto ducimus id, quibusdam repellendus dignissimos laborum, nihil doloremque quidem tempora porro quam, ipsam vitae eum? Eligendi!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, ducimus! Cum et error iusto ducimus id, quibusdam repellendus dignissimos laborum, nihil doloremque quidem tempora porro quam, ipsam vitae eum? Eligendi!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, ducimus! Cum et error iusto ducimus id, quibusdam repellendus dignissimos laborum, nihil doloremque quidem tempora porro quam, ipsam vitae eum? Eligendi!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, ducimus! Cum et error iusto ducimus id, quibusdam repellendus dignissimos laborum, nihil doloremque quidem tempora porro quam, ipsam vitae eum? Eligendi!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, ducimus! Cum et error iusto ducimus id, quibusdam repellendus dignissimos laborum, nihil doloremque quidem tempora porro quam, ipsam vitae eum? Eligendi!
+                    <div class="col-8 description">
+                        <h6>WHO WE ARE</h6>
+                        <h2> 
+                            <span>
+                                <i class="fa-regular fa-gem"></i>
+                                Excellence
+                            </span> in Transport
+                        </h2>
                     </div>
                     <div class="col-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, facere? Aliquam excepturi vero ipsam, accusamus labore voluptatibus aliquid quidem nostrum molestias laudantium sunt cum delectus possimus a repudiandae modi incidunt.
@@ -102,6 +105,14 @@ export default {
 <style scoped lang="scss">
 //ABOUT US
 .about-us {
+    .description {
+        span {
+            background-color: rgba(173, 216, 230, 0.393);
+            color: #16928e;
+            font-weight: bold;
+            padding: .3rem;
+        }
+    }
     // DEBUG
     min-height: 400px;
 }

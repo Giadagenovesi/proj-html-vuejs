@@ -8,8 +8,22 @@ a {
     text-decoration: none;
     color: inherit;
 }
+header li {
+    list-style-type: none;
+}
 // LAYOUT
 .container {
-    // DEBUG
-    border: 1px solid red;
+   width: 65%;
+}
+
+// Common
+.btn {
+    font-size: .8rem;
+    color: white;
+}
+.main-btn {
+    background-color: #038384;
+}
+.second-btn {
+    border:1px solid #038384;
 }
