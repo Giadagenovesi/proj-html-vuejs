@@ -65,10 +65,13 @@ export default {
                                     <i class="fa-regular fa-user"></i>
                                 </a>
                             </li>
+                            <li>
+                                <a href="" class="btn main-btn">GET IN TOUCH</a>
+                            </li>
                         </ul>
                         
                     </div>
-                    <a href="" class="btn main-btn">GET IN TOUCH</a>
+                    
                   
                 </div>
                 <div class="cargo-transport">
