@@ -149,16 +149,28 @@ export default {
         <!-- /LOGISTIC -->
 
         <!-- RESULTS -->
-        <section class="results text-center py-5">
+        <section class="results text-center">
             <div class="container">
-                <h2>Results in Numbers</h2>
-                <ul class="d-flex">
-                    <li>100</li>
-                    <li>100</li>
-                    <li>100</li>
-                    <li>100</li>
-
-                </ul>
+                <h6>WHAT ARE WE DOING</h6>
+                <h2> <span>Results</span> in Numbers</h2>
+                <div class="result-number d-flex justify-content-between">
+                    <div>
+                        <h3>128</h3>
+                        <p>Certification</p>
+                    </div>
+                    <div>
+                        <h3>230</h3>
+                        <p>Employees</p>
+                    </div>
+                    <div>
+                        <h3>517</h3>
+                        <p>Customer</p>
+                    </div>
+                    <div>
+                        <h3>94</h3>
+                        <p>Countries Served</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- /RESULTS -->
@@ -166,13 +178,42 @@ export default {
         <!-- FEEDBACK -->
         <section class="feedback py-5">
             <div class="container">
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam atque reprehenderit nisi aut, mollitia voluptatem. Sed modi necessitatibus numquam dolor rerum beatae, est adipisci placeat qui velit temporibus officiis!
+                <div class="aknowledgements text-center">
+                    <h6> CUSTOMER TESTIMONIALS</h6>
+                    <h2 class="mt-3"> Trusted<span>Feedback</span></h2>
+                    <p class="mt-4 mb-5">We work intensivly in search of ideals that can add up in the lives of our customers. Tis is what moves us and we are grateful for the recognition.</p>
                 </div>
-                <div class="row">
-                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid deleniti voluptatibus labore dolore optio quasi, maiores in cum fugiat beatae accusamus? Excepturi fugit et praesentium assumenda similique id dolore!</div>
-                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum iure cupiditate sunt aliquid ipsam at! Asperiores eius voluptatem nihil reprehenderit! Magnam rerum dolore beatae, nobis facilis odit quos sit.</div>
-                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio id accusantium laborum, quis molestiae laudantium rerum atque ratione molestias. Suscipit consequatur, ratione nam id itaque veritatis similique dicta ducimus!</div>
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <div class="ms_card ">
+                            <img  class="company mb-3" src="../assets/img/logo-1.png" alt="">   
+                            <div class="rewiew">
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <i class="fa-solid fa-quote-right "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="ms_card ">
+                            <img  class="company mb-3" src="../assets/img/logo-2.png" alt="">   
+                            <div class="rewiew">
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <i class="fa-solid fa-quote-right "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="ms_card ">
+                            <img  class="company mb-3" src="../assets/img/logo-3.png" alt="">   
+                            <div class="rewiew">
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <p>We are continually focused on developing technology solutions adapted to our client's needs.</p>
+                                <i class="fa-solid fa-quote-right "></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -303,7 +344,7 @@ export default {
 
             span {
                 background-color: #16928e26;
-                padding: .0 .8rem;
+                padding: 0 .3rem;
                 border-radius: 5px;
             }
         }
@@ -342,15 +383,95 @@ export default {
 }
 //LOGISTIC
 .logistic {
+    
+
+   
     // DEBUG
     background-color: lightblue;
     min-height: 300px;
 }
 
+//RESULTS
+.results {
+    padding: 6rem 0;
+    color: white;
+    background-image: url(../assets/img/bg-10.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h6 {
+        font-size: .6rem;
+        font-weight: bold;
+        color: #16928e;
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        span {
+            background-color: #16928e26;
+            padding: 0 .3rem;
+            border-radius: 5px; 
+        }
+    }
+    .result-number {
+        margin-top: 6rem;
+        h3 {
+            font-weight: bolder;
+            color: #16928e;
+        }
+        p {
+            font-weight: bolder;
+        }
+    }
+}
+
 //FEEDBACK
 .feedback {
-     // DEBUG
-    min-height: 300px;
-    background-color: lightgreen;
+    background-color: #121117;
+    color: white;
+    .aknowledgements {
+        width: 70%;
+        margin: 0 auto;
+        h6 {
+            font-size: .6rem;
+            font-weight: bold;
+            color: #16928e;
+        }
+        h2 {
+            font-size: 2.5rem;
+            span {
+                background-color: #16928e26;
+                padding: .0 .8rem;
+                border-radius: 5px;
+            }
+        }
+        p {
+            color: rgba(255, 255, 255, 0.708);
+            font-size: .9rem;
+        }
+    }
+    .company {
+        width: 120px;
+        filter: invert(100%) sepia(1%) saturate(2454%) hue-rotate(171deg) brightness(111%) contrast(100%);
+    }
+    .rewiew {
+        p {
+            color: rgba(255, 255, 255, 0.708);
+            font-size: .9rem;
+
+        }
+        i {
+            position: absolute;
+            bottom: 10%;
+            right: 15%;
+            color: rgba(255, 255, 255, 0.293);
+            font-size: 1.5rem;
+        }
+            
+    }        
+
+    
 }
+
+//CONTACTS
 </style>
