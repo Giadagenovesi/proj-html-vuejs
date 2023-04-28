@@ -1,6 +1,16 @@
 <script>
+import { store } from '../store';
+
 export default {
     name: "AppHeader",
+    props: {
+        NavLinks: String,
+    },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
@@ -45,21 +55,13 @@ export default {
                     </div>
                     <div class="nav-bar d-flex pt-3">
                         <ul class="d-flex">
-                            <li>
-                                <a href="">Home</a>
+                            <li v-for="(link, index) in store.NavLinks" :key="index">
+                                <a href="">{{link}}</a>
                             </li>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
+                            
+                            
+                        </ul>
+                        <ul class="d-flex">
                             <li>
                                 <a href="">
                                     <i class="fa-regular fa-user"></i>
