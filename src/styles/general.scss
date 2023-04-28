@@ -44,3 +44,18 @@ body {
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.708);
 }
+.ms_section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+
+    span {
+        background-color: rgba(173, 216, 230, 0.255);
+        color: #16928e;
+        padding: .2rem;
+        }
+}
+.ms_section-subtitle {
+    font-size: .6rem;
+    font-weight: bolder;
+    color: #038384;
+}

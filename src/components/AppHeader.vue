@@ -77,7 +77,7 @@ export default {
                 <div class="cargo-transport">
                     <h6>LOGISTIC SERVICES</h6>
                     <h1>CARGO TRANSPORT</h1>
-                    <p>Fractional or exclusive road cargo trasportation to all regions, with small, medium and large vehicles</p>
+                    <p class="mb-5">Fractional or exclusive road cargo trasportation to all regions, with small, medium and large vehicles</p>
                     <a href="" class="me-2 btn main-btn">GET IN TOUCH</a>
                     <a href="" class="btn second-btn ">READ MORE</a>
                     
@@ -129,8 +129,8 @@ header {
 
     .cargo-transport {
         padding-top: 2rem;
-        width: 40%;
-        margin: 5rem 0 0 2rem;
+        width: 45%;
+        margin: 3rem 0 2rem 1.5rem;
 
         h6 {
             font-size: .8rem;
@@ -138,8 +138,11 @@ header {
         }
         h1 {
             margin-bottom: 2rem;
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 900;
+        }
+        p {
+            font-size: .9rem;
         }
     }
 }

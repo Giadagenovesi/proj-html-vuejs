@@ -12,8 +12,8 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-8 description">
-                        <h6>WHO WE ARE</h6>
-                        <h2> 
+                        <h6 class="ms_section-subtitle">WHO WE ARE</h6>
+                        <h2 class="ms_section-title"> 
                             <span class="me-1">
                                 <i class="fa-regular fa-gem"></i>
                                 Excellence
@@ -85,8 +85,8 @@ export default {
             <div class="container">
                 <div class="row ">
                     <div class="col-9 services ">
-                        <h6> ROAD TRANSPORT</h6>
-                        <h2 class="mt-3">Main <span>Services</span></h2>
+                        <h6 class="ms_section-subtitle"> ROAD TRANSPORT</h6>
+                        <h2 class="ms_section-title mt-3">Main <span>Services</span></h2>
                         <p class="mt-4">With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.</p>
                     </div>
                     <div class="col-3 align-self-end mb-4 text-end">
@@ -144,8 +144,10 @@ export default {
         <!-- LOGISTIC -->
         <section class="logistic text-center py-5">
             <div class="ms_container mb-5">
-                <h6 class="mb-3">HOW IT WORKS IN PRACTICE</h6>
-                <h2 class="mb-3"><span>Logistical</span> Procedure</h2>
+                <h6 class=" ms_section-subtitle mb-3">HOW IT WORKS IN PRACTICE</h6>
+                <h2 class=" ms_section-title mb-3">
+                    <span>Logistical</span> Procedure
+                </h2>
                 <p>We work with innovative methodologies to ensure that the entire devlivery process is done from start to finish as planned.</p>
             </div>
             <div class="line"></div>
@@ -185,8 +187,10 @@ export default {
         <!-- RESULTS -->
         <section class="results text-center">
             <div class="container">
-                <h6>WHAT ARE WE DOING</h6>
-                <h2> <span>Results</span> in Numbers</h2>
+                <h6 class="ms_section-subtitle mb-4">WHAT ARE WE DOING</h6>
+                <h2 class="ms_section-title"> 
+                    <span>Results</span> in Numbers
+                </h2>
                 <div class="result-number d-flex justify-content-between">
                     <div>
                         <h3>128</h3>
@@ -213,8 +217,10 @@ export default {
         <section class="feedback py-5">
             <div class="container">
                 <div class="aknowledgements text-center">
-                    <h6> CUSTOMER TESTIMONIALS</h6>
-                    <h2 class="mt-3"> Trusted<span>Feedback</span></h2>
+                    <h6 class="ms_section-subtitle"> CUSTOMER TESTIMONIALS</h6>
+                    <h2 class="ms_section-title mt-3"> 
+                        Trusted<span>Feedback</span>
+                    </h2>
                     <p class="mt-4 mb-5">We work intensivly in search of ideals that can add up in the lives of our customers. Tis is what moves us and we are grateful for the recognition.</p>
                 </div>
                 <div class="row mt-3">
@@ -260,8 +266,10 @@ export default {
                 <div class="row">
                     <div class="col-7">
                         <div class="get-in-touch">
-                            <h6>SEND A MESSAGE</h6>
-                            <h2 class="mt-3">Get in <span>Touch</span></h2>
+                            <h6 class="ms_section-subtitle">SEND A MESSAGE</h6>
+                            <h2 class="ms_section-title mt-3">
+                                Get in <span>Touch</span>
+                            </h2>
                             <p class="mb-5">We will respond to your message as soon as possible</p>
                         </div>   
                         <form action="" class="contact-us">
@@ -337,22 +345,6 @@ export default {
     color: #21333E;
     padding: 5rem 0;
     .description {
-
-        h6 {
-            font-size: .8rem;
-            padding-bottom: 1.5rem;
-            font-weight: bold;
-            color: #16928e;
-        }
-        h2 {
-            font-weight: bold;
-
-            span {
-            background-color: rgba(173, 216, 230, 0.393);
-            color: #16928e;
-            padding: .2rem;
-            }
-        }
         .description-text {
         font-size: .8rem;
 
@@ -424,21 +416,6 @@ export default {
     color: white;
     padding: 4rem 0 6rem;
     .services {
-        h6 {
-            font-size: .6rem;
-            font-weight: bold;
-            color: #16928e;
-        }
-        h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-
-            span {
-                background-color: #16928e26;
-                padding: 0 .3rem;
-                border-radius: 5px;
-            }
-        }
         p {
             font-size: .8rem;
         }
@@ -463,14 +440,14 @@ export default {
     .service {
         h6 {
             font-size: 1.2rem;
+            color: white;
+            font-weight: 600;
         }
         
         p {
             font-size: .8rem;
         }
-    }
-    
-    
+    } 
 }
 //LOGISTIC
 .logistic {
@@ -480,22 +457,7 @@ export default {
     .ms_container {
         width: 50%;
         margin: 0 auto;
-        h6 {
-            font-size: .7rem;
-            font-weight: bold;
-            color:#16928e;
-            
-        }
-        h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            span {
-                background-color: #16928e26;
-                color:#038384;
-                padding: 0 .3rem;
-                border-radius: 5px;
-            }
-        }
+
         p {
             font-size: .9rem;
             color: #21333eb1;
@@ -543,20 +505,6 @@ export default {
     background-size: cover;
     background-position: center;
 
-    h6 {
-        font-size: .6rem;
-        font-weight: bold;
-        color: #16928e;
-    }
-    h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        span {
-            background-color: #16928e26;
-            padding: 0 .3rem;
-            border-radius: 5px; 
-        }
-    }
     .result-number {
         margin-top: 6rem;
         h3 {
@@ -576,19 +524,7 @@ export default {
     .aknowledgements {
         width: 70%;
         margin: 0 auto;
-        h6 {
-            font-size: .6rem;
-            font-weight: bold;
-            color: #16928e;
-        }
-        h2 {
-            font-size: 2.5rem;
-            span {
-                background-color: #16928e26;
-                padding: .0 .8rem;
-                border-radius: 5px;
-            }
-        }
+        
         p {
             color: rgba(255, 255, 255, 0.708);
             font-size: .9rem;
@@ -618,21 +554,6 @@ export default {
 //CONTACTS
 .contacts {
     .get-in-touch {
-        h6 {
-            font-size: .6rem;
-            font-weight: bolder;
-            color: #038384;
-        }
-        h2 {
-            font-weight: bolder;
-            font-size: 2.5rem;
-            span {
-                background-color: #16928e26;
-                color: #16928e;
-                padding: .0 .8rem;
-                border-radius: 5px;
-            }
-        }
         p {
             color: #21333eb1;
             font-size: .9rem;
@@ -684,12 +605,10 @@ export default {
                 line-height: 30px;
                 margin-right: 10px;
             }
-
         }
         .map {
             color: #038384;
         }
     }
-
 }
 </style>
