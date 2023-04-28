@@ -30,6 +30,7 @@ body {
 .btn {
     font-size: .8rem;
     color: white;
+    border-radius: 2px;
 }
 .main-btn {
     background-color: #038384;
@@ -43,6 +44,7 @@ body {
     padding: 2rem;
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.708);
+    transition: all 1s;
 }
 .ms_section-title {
     font-weight: 800;
@@ -59,3 +61,11 @@ body {
     font-weight: bolder;
     color: #038384;
 }
+
+//HOVER
+
+.ms_card:hover {
+    transform: scale(1.1); 
+}
+
+

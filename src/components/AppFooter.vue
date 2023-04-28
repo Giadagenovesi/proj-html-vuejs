@@ -123,6 +123,11 @@ export default {
     
             }   
         }
+        //HOVER EFFECTS
+        i:hover {
+        color: #52bbbb;
+        } 
+        
     }
     .card-title {
         color: white;

@@ -62,9 +62,9 @@ export default {
         p {
             color: rgba(255, 255, 255, 0.708);
             font-size: .9rem;
-        }
-        
+        }   
     }
+    
     .company {
         width: 120px;
         filter: invert(100%) sepia(1%) saturate(2454%) hue-rotate(171deg) brightness(111%) contrast(100%);

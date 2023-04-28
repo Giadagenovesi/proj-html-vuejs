@@ -1,6 +1,16 @@
 <script>
+import { store } from '../store';
+
 export default {
     name:"LogisticSection",
+    props: {
+        steps: Object,
+    },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
@@ -16,33 +26,12 @@ export default {
             <div class="line"></div>
             <div class="steps_container">
                 <div class="steps d-flex justify-content-between">
-                    <div>
-                        <h6 class="mb-4"> 01</h6>
-                        <h5>Collection of information</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div>
-                        <h6 class="mb-4"> 02</h6>
-                        <h5>Service Invoice Sending</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div>
-                        <h6 class="mb-4"> 03</h6>
-                        <h5>Withdrawal of Cargo</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div>
-                        <h6 class="mb-4"> 04</h6>
-                        <h5>Transport Customers Order</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div>
-                        <h6 class="mb-4"> 05</h6>
-                        <h5>Successful Delivery</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div v-for="(step, index) in store.steps" :key="index">
+                        <h6 class="mb-4">{{ step.number }} </h6>
+                        <h5>{{ step.title }}</h5>
+                        <p>{{ step.subtitle }}</p>
                     </div>
                 </div>
-
             </div>
         </section>
 </template>
@@ -57,7 +46,7 @@ export default {
         margin: 0 auto;
 
         p {
-            font-size: .9rem;
+            font-size: .8rem;
             color: #21333eb1;
         }
     }

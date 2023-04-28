@@ -22,12 +22,11 @@ export default {
                 <h2 class="ms_section-title"> 
                     <span>Results</span> in Numbers
                 </h2>
-                <div class="result-number d-flex justify-content-between">
-                    <div v-for="(result, index) in store.results">
+                <div class="d-flex justify-content-between">
+                    <div class="result-number" v-for="(result, index) in store.results">
                         <h3> {{ result.number }}</h3>
                         <p>{{ result.topic }}</p>
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
         </section>
@@ -42,7 +41,11 @@ export default {
     background-position: center;
 
     .result-number {
-        margin-top: 6rem;
+        padding: .5rem;
+        margin-top: 4rem;
+        border-radius: 3px; 
+        transition: all 1s;
+
         h3 {
             font-weight: bolder;
             color: #16928e;
@@ -50,6 +53,10 @@ export default {
         p {
             font-weight: bolder;
         }
+    }
+    .result-number:hover {
+        transform: scale(1.2);
+        cursor: pointer;
     }
 }
 </style>

@@ -107,6 +107,7 @@ export default {
             background-color: rgb(246, 246, 246);
             border: 0;
         }
+        
     }
     .company-contacts {
         padding: 0 1.5rem ;
@@ -139,6 +140,21 @@ export default {
         .map {
             color: #038384;
         }
+
+        //HOVER EFFECTS
+        i:hover {
+        color: #21333eb1;
+        }        
+        .second-btn:hover {
+            background-color: #038384;
+            color: white;
+        }
+    }
+    //HOVER EFFECTS 
+    .main-btn:hover {
+        color: #038384;
+        background-color: white;
+        border-color: #038384;
     }
 }
 </style>

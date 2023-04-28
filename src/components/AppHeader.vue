@@ -45,44 +45,37 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="header-bottom pt-3">
-            <div class="container">
-                <div class=" d-flex  justify-content-between align-items-center">
-                    <div class="logo">
-                        <h6>
-                            <span>NEX</span>GEN
-                        </h6>
-                    </div>
-                    <div class="nav-bar d-flex pt-3">
-                        <ul class="d-flex">
-                            <li v-for="(link, index) in store.NavLinks" :key="index">
-                                <a href="">{{link}}</a>
-                            </li>
-                            
-                            
-                        </ul>
-                        <ul class="d-flex">
-                            <li>
+        <div class="header-bottom">
+            <div class="background">
+                <div class="container">
+                    <div class=" d-flex  justify-content-between align-items-center">
+                        <div class="logo">
+                            <h6>
+                                <span>NEX</span>GEN
+                            </h6>
+                        </div>
+                        <div class="nav-bar d-flex">
+                            <ul class="d-flex align-items-center">
+                                <li v-for="(link, index) in store.NavLinks" :key="index">
+                                    <a href="">{{link}}</a>
+                                </li>  
+                            </ul>
+                            <div>
                                 <a href="">
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-regular fa-user me-3"></i>
                                 </a>
-                            </li>
-                            <li>
                                 <a href="" class="btn main-btn">GET IN TOUCH</a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cargo-transport">
+                        <h6>LOGISTIC SERVICES</h6>
+                        <h1>CARGO TRANSPORT</h1>
+                        <p class="mb-5">Fractional or exclusive road cargo trasportation to all regions, with small, medium and large vehicles</p>
+                        <a href="" class="me-2 btn main-btn">GET IN TOUCH</a>
+                        <a href="" class="btn second-btn ">READ MORE</a>
                         
                     </div>
-                    
-                  
-                </div>
-                <div class="cargo-transport">
-                    <h6>LOGISTIC SERVICES</h6>
-                    <h1>CARGO TRANSPORT</h1>
-                    <p class="mb-5">Fractional or exclusive road cargo trasportation to all regions, with small, medium and large vehicles</p>
-                    <a href="" class="me-2 btn main-btn">GET IN TOUCH</a>
-                    <a href="" class="btn second-btn ">READ MORE</a>
-                    
                 </div>
             </div>
         </div>
@@ -91,64 +84,96 @@ export default {
 
 <style scoped lang="scss">
 header {
-
+    
     // HEADER TOP
-.header-top {
-    width: 100%;
-    background-color: #21333E;
-    color: rgba(255, 255, 255, 0.708);
-    font-size: .8rem;
-    .social li {
-        margin: 0 1rem;
+    .header-top {
+        width: 100%;
+        background-color: #21333E;
+        color: rgba(255, 255, 255, 0.708);
+        font-size: .8rem;
+        .social li {
+            margin: 0 1rem;
+        }
     }
-}
-// HEADER-BOTTOM
-.header-bottom {
-    background-image:url(../assets/img/bg-9.jpg);
-    background-position: top left;
-    filter: grayscale(.3);
-    background-size: cover;
-    color: white;
-    padding-bottom:  9rem ;
-    .logo {
-        h6 {
-            font-size: 1rem;
-            font-weight:bold ;
-            span {
-                color: #52bbbb;
-                margin-right: .2rem;
-                background-color: #52bbbb37;
-                padding: .4rem .1rem .4rem 1.5rem;
-                border-radius: 30px 0 0 30px;
+    // HEADER-BOTTOM
+    .header-bottom {
+        background-image:url(../assets/img/bg-9.jpg);
+        background-position: top left;
+        filter: grayscale(.2);
+        background-size: cover;
+        color: white;
+
+        .background {
+            background-color: rgba(0, 0, 0, 0.282);
+            padding: 2rem 0 9rem;
+            .logo {
+                h6 {
+                    font-size: 1rem;
+                    font-weight:bold ;
+                    span {
+                        color: #52bbbb;
+                        margin-right: .2rem;
+                        background-color: #52bbbb37;
+                        padding: .4rem .1rem .4rem 1.5rem;
+                        border-radius: 30px 0 0 30px;
+                    }
+                }
+            }
+            .nav-bar {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                }
+                li {
+                    font-size: .9rem;
+                    margin: 0 1rem;
+                }
+                i {
+                    font-size: .8rem
+                }
+            // HOVER EFFETS
+                li:hover {
+                    border-bottom: 3px solid #038384;
+                }
+                a:hover {
+                    color: white;
+                }
+    
+            }
+    
+            .cargo-transport {
+                padding-top: 2rem;
+                width: 45%;
+                margin: 4.5rem 0 2rem 1rem;
+                color: rgba(255, 255, 255, 0.799);
+
+    
+                h6 {
+                    font-size: .8rem;
+                    color:  #0cb9b9;
+                }
+                h1 {
+                    margin-bottom: 2rem;
+                    font-size: 3.2rem;
+                    font-weight: 900;
+                    color: white;
+                }
+                p {
+                    font-size: .9rem;
+                }
+                //HOVER EFFECTS 
+                .second-btn:hover {
+                    background-color: #038384;
+                    color: white;
+                }
             }
         }
     }
-    .nav-bar {
-        li {
-            margin: 0 1.2rem;
-        }
-    }
-
-    .cargo-transport {
-        padding-top: 2rem;
-        width: 45%;
-        margin: 3rem 0 2rem 1.5rem;
-
-        h6 {
-            font-size: .8rem;
-            color: #52bbbb;
-        }
-        h1 {
-            margin-bottom: 2rem;
-            font-size: 3.2rem;
-            font-weight: 900;
-        }
-        p {
-            font-size: .9rem;
-        }
+    //HOVER
+    .main-btn:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.177);
+        border-color: #038384;
     }
 }
-
-}
-
 </style>
