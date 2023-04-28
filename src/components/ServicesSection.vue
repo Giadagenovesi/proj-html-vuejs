@@ -73,6 +73,7 @@ export default {
     .services {
         p {
             font-size: .8rem;
+            color: rgba(255, 255, 255, 0.651);
         }
     }
     .symbol {

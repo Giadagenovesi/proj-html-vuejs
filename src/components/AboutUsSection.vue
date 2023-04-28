@@ -8,7 +8,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-8 description">
-                        <h6 class="ms_section-subtitle">WHO WE ARE</h6>
+                        <h6 class="ms_section-subtitle mb-4">WHO WE ARE</h6>
                         <h2 class="ms_section-title"> 
                             <span class="me-1">
                                 <i class="fa-regular fa-gem"></i>

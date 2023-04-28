@@ -105,7 +105,7 @@ header {
 
         .background {
             background-color: rgba(0, 0, 0, 0.282);
-            padding: 2rem 0 9rem;
+            padding: 2rem 0 6rem;
             .logo {
                 h6 {
                     font-size: 1rem;
