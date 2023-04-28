@@ -40,8 +40,8 @@ export default {
                 <div class=" d-flex  justify-content-between align-items-center">
                     <div class="logo">
                         <h6>
-                        <span>NEX</span>GEN
-                    </h6>
+                            <span>NEX</span>GEN
+                        </h6>
                     </div>
                     <div class="nav-bar d-flex pt-3">
                         <ul class="d-flex">
@@ -104,7 +104,7 @@ header {
 .header-bottom {
     background-image:url(../assets/img/bg-9.jpg);
     background-position: top left;
-    filter: grayscale(.2);
+    filter: grayscale(.3);
     background-size: cover;
     color: white;
     padding-bottom:  9rem ;

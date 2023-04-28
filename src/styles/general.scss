@@ -3,6 +3,9 @@
 //Fontawsome import
 @import"node_modules/@fortawesome/fontawesome-free/css/all.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
 // RESET
 a {
     text-decoration: none;
@@ -13,6 +16,9 @@ header li {
 }
 img {
     max-width: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
 }
 // LAYOUT
 .container {
@@ -36,4 +42,5 @@ img {
     position: relative;
     padding: 2rem;
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.708);
 }
